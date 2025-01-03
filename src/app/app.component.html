@@ -1,50 +1,8 @@
-<section>
-  <div class="row">
-    <div class="col-8">
-      <div class="card">
-        <div class="card-header bg-success">
-          New Employee
-        </div>
-        <div class="card-body">
-          <form [formGroup]="employeeForm"]>
-            <div class="row">
-              <div class="col-6">
-                <label for="">First Name:</label>
-                <input formControlName="firstName" class="form-control" type="text" name="" id="">
-              </div>
-              <div class="col-6">
-                <label for="">Last Name:</label>
-                <input formControlName="lastName" class="form-control" type="text" name="" id="">
-              </div>
-              <div class="col-6">
-                <label for="">Email:</label>
-                <input formControlName="email" class="form-control" type="text" name="" id="">
-              </div>
-              <div class="col-6">
-                <label for="">Phone:</label>
-                <input formControlName="phone" class="form-control" type="text" name="" id="">
-              </div>
-              <div class="col-6">
-                <label for="">City:</label>
-                <input formControlName="city" class="form-control" type="text" name="" id="">
-              </div>
-              <div class="col-12">
-                <label for="">Address:</label>
-                <textarea formControlName="address" class="form-control" type="text" name="" id=""></textarea>
-              </div>
-            </div>
-            <div class="row pt-2">
-              <div class="col-6 text-center">
-                <button class="btn btn-secondary">Reset</button>
-              </div>
-              <div class="col-6 text-center">
-                <button  class="btn btn-success">save</button>
-              </div>
-            </div>
-          </form>
-
-        </div>
-      </div>
-    </div>
+<section class="container">
+  <div class="img-container"></div>
+  <div class="content-container">
+    <h1>Welcome to the Dashboard!</h1>
+    <p>Manage your tasks, monitor progress, and much more, all in one place.</p>
+    <button class="dashboard-btn">Go to Dashboard</button>
   </div>
 </section>
