@@ -62,11 +62,12 @@ html, body {
     padding: 12px 30px;
     font-size: 1rem;
     color: #fff;
-    background-color: #007bff;
+    background-color: #004085;
     border: none;
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    text-decoration: none;
   }
   
   .dashboard-btn:hover {
@@ -75,7 +76,7 @@ html, body {
   }
   
   .dashboard-btn:active {
-    background-color: #004085;
+    background-color: #0056b3;
     transform: scale(0.95);
   }
   
