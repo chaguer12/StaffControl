@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeAddComponent } from './employee-add/employee-add.component';
 import { EmployeeEditComponent } from './employee-edit/employee-edit.component';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -10,10 +11,11 @@ import { EmployeeEditComponent } from './employee-edit/employee-edit.component';
   declarations: [
     EmployeeListComponent,
     EmployeeAddComponent,
-    EmployeeEditComponent
+    EmployeeEditComponent,
+    HomeComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ]
 })
 export class EmployeeModule { }
