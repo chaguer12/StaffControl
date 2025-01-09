@@ -1,1 +1,39 @@
-<p>employee-list works!</p>
+<section>
+    <div class="employee-list-container">
+        <h1>Employee Management</h1>
+      
+        <!-- Add Employee Button -->
+        <button class="add-employee-btn" (click)="displayAddEmployeeForm()">Add Employee</button>
+      
+        <!-- Employees Table -->
+        <table class="employee-table" *ngIf="employees.length > 0; else noData">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Full Name</th>
+              <th>Position</th>
+              <th>Salary</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let employee of employees; let i = index">
+              <td>{{ i + 1 }}</td>
+              <td>{{ employee.fullName }}</td>
+              <td>{{ employee.position }}</td>
+              <td>{{ employee.salary | currency }}</td>
+              <td>
+              <button class="edit-btn" (click)="editEmployee(employee)">Edit</button>
+              <button class="delete-btn" (click)="deleteEmployee(employee.id)">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <!-- No Employees Message -->
+        <ng-template #noData>
+          <p class="no-data-message">No employees found. Please add one!</p>
+        </ng-template>
+      </div>
+      
+</section>
